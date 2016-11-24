@@ -1,0 +1,17 @@
+<!DOCTYPE html><head lang=en><meta charset=UTF-8><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><script>document.addEventListener("DOMContentLoaded", function checkboxHandling() {
+
+    var checkbox = document.querySelector('#showOnlyFailed');
+
+    function checkboxChangeHandler() {
+        var showOnlyFailed = checkbox.checked;
+        var successElements = document.querySelectorAll('.js-success');
+        var len = successElements.length;
+
+        for (var i = 0; i < len; i++) {
+            successElements[i].style.display = showOnlyFailed ? 'none' : 'block';
+        }
+    }
+
+    checkboxChangeHandler();
+    document.querySelector('#showOnlyFailed').addEventListener('change', checkboxChangeHandler);
+})</script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><title></title></head><body><h3> Tests: 12 Skipped: 0 <span class="[object Object]">Failures: 5</span><div style="float: right;">Show only failed tests<input type="checkbox" id="showOnlyFailed" name="showOnlyFailed" checked="false" style="margin: 10px;transform: scale(1.5); -webkit-transform: scale(1.5);"></div></h3><div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"><div class="panel panel-default js-success"><div class="panel-heading" style="background-color: #d0e2f0;" role="tab" id="headingOne"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFazerLoginnonovoerp"aria-expanded="false"  aria-controls="collapseFazerLoginnonovoerp">Fazer Login no novoerp:  - 11.432s<br>Tests: 1 Skipped: 0 <span class="bg-success">Failures: 0</span></a></h4></div><div id="collapseFazerLoginnonovoerp" class="panel-collapse collapse" role="tabpanel" "aria-expanded="false" style="height: 0px;" aria-labelledby="headingOne"></div></div><div class="panel panel-default js-fail"><div class="panel-heading" style="background-color: #d0e2f0;" role="tab" id="headingOne"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCadastrodeProduto"aria-expanded="false"  aria-controls="collapseCadastrodeProduto">Cadastro de Produto - 4.492s<br>Tests: 11 Skipped: 0 <span class="bg-danger">Failures: 5</span></a></h4></div><div id="collapseCadastrodeProduto" class="panel-collapse collapse" role="tabpanel" "aria-expanded="false" style="height: 0px;" aria-labelledby="headingOne"></div></div></div></body></html>
