@@ -9,8 +9,8 @@ exports.config = {
     format:'json: result/report.json'  },
     // params: {
     //     login :[
-    //       {url : 'https://erpqas.avancoinfo.net'},
-    //       {user :'duvaguim@yahoo.com.br'},
+    //       {url : 'https:/ssss'},
+    //       {user :'du@yahoo.com.br'},
     //       {password : '123456'},
     //     ]
     // },
